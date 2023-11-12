@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Image Viewer</title>
+    <style>
+        body {
+            display: none;
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Prompt the user for a password
+        var password = prompt("Enter the password:");
+
+        // Check if the entered password is correct
+        if (password === "hi") {
+            // If the password is correct, display the content
+            document.body.style.display = "block";
+        } else {
+            // If the password is incorrect, show an alert and do not display the content
+            alert("Incorrect password. The content will not be displayed.");
+        }
+    </script>
+
+    <div class="container">
+        <p id="currentDate"></p>
+        <img id="dynamicImage" src="" alt="Dynamic Image">
+        <object type="text/plain" data="1.txt" width="100%" height="200" style="background-color: white; color: black;"></object>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Calculate the number of days remaining until December 13, 2023
     var cmas = new Date(2024, 3, 18); // Note: Months are zero-indexed, so December is 11
-    if (today.getMonth() == 11 && today.getDate() > 13) {
-        cmas.setFullYear(cmas.getFullYear() + 1);
-    }
+    
     var one_day = 1000 * 60 * 60 * 24;
     var number = Math.ceil((cmas.getTime() - today.getTime()) / one_day); // Using Math.ceil to ensure a positive number
     var imageUrl = number + ".jpeg"; // Concatenating with ".jpeg"

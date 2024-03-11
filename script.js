@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     currentDateElement.textContent = today.toLocaleDateString('cs-CZ', options);
 
     // Calculate the number of days remaining until December 13, 2023
-    var cmas = new Date(2024, 6, 30); // Note: Months are zero-indexed, so December is 11
+    var cmas = new Date(2024, 3, 30); // Note: Months are zero-indexed, so December is 11
     
     var one_day = 1000 * 60 * 60 * 24;
     var number = Math.ceil((cmas.getTime() - today.getTime()) / one_day); // Using Math.ceil to ensure a positive number
